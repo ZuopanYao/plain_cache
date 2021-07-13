@@ -11,7 +11,7 @@ class PlainCache {
   static final security.Encrypter _encrypter =
       security.Encrypter(security.AES(_key));
 
-  // Data path
+  /// Data path
   static Future<String> _dataPath() {
     return getApplicationDocumentsDirectory()
         .then((value) => value.uri.toFilePath() + _dataFileName);
@@ -21,7 +21,7 @@ class PlainCache {
     _read();
   }
 
-  // Save to path
+  /// Save to path
   static void _save() async {
     final json = jsonEncode(_storage);
     final encrypt = _encrypter.encrypt(json, iv: _iv).base64;
@@ -34,7 +34,7 @@ class PlainCache {
     }
   }
 
-  // Read from path
+  /// Read from path
   static void _read() async {
     final dataPath = await _dataPath();
     try {
@@ -47,13 +47,13 @@ class PlainCache {
     }
   }
 
-  // Read as String from persistent cache
+  /// Read as String from persistent cache
   String? getString({String? forKey}) {
     assert(forKey != null);
     return _storage[forKey];
   }
 
-  // Read as int from persistent cache
+  /// Read as int from persistent cache
   int getInt({String? forKey}) {
     assert(forKey != null);
     final value = _storage[forKey];
@@ -63,7 +63,7 @@ class PlainCache {
     return value;
   }
 
-  // Read as double from persistent cache
+  /// Read as double from persistent cache
   double getDouble({String? forKey}) {
     assert(forKey != null);
     final value = _storage[forKey];
@@ -73,7 +73,7 @@ class PlainCache {
     return value;
   }
 
-  // Read as bool from persistent cache
+  /// Read as bool from persistent cache
   bool getBool({String? forKey}) {
     assert(forKey != null);
     final value = _storage[forKey];
@@ -83,19 +83,19 @@ class PlainCache {
     return value;
   }
 
-  // Read as List from persistent cache
+  /// Read as List from persistent cache
   List<dynamic>? getList({String? forKey}) {
     assert(forKey != null);
     return _storage[forKey];
   }
 
-  // Read as Map from persistent cache
+  /// Read as Map from persistent cache
   Map<String, dynamic>? getMap({String? forKey}) {
     assert(forKey != null);
     return _storage[forKey];
   }
 
-  // Save to persistent cache
+  /// Save to persistent cache
   void setValue(dynamic newValue, {String? forKey}) {
     assert(forKey != null);
     if (forKey is String) {
@@ -104,7 +104,7 @@ class PlainCache {
     }
   }
 
-  // Remove from persistent cache
+  /// Remove from persistent cache
   void remove({String? forKey}) {
     assert(forKey != null);
     _storage.remove(forKey);

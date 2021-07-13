@@ -3,12 +3,6 @@ description: Persistent cache library for Dart(Flutter for iOS and Android).
 version: 1.0.2
 homepage: https://github.com/ZuopanYao/plain_cache
 repository: https://github.com/ZuopanYao/plain_cache.git
-platforms:  
-  - Android
-  - iOS
-  - Windows
-  - Linux
-  - macOS
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
