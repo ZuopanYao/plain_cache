@@ -1,4 +1,4 @@
-# simple_cache
+# plain_cache
 
 Persistent cache library for Dart(Flutter for iOS and Android).
 
@@ -7,11 +7,11 @@ Persistent cache library for Dart(Flutter for iOS and Android).
 ### Enable Simple Cache
 
 ```dart
-import 'package:simple_cache/simple_cache.dart';
+import 'package:plain_cache/plain_cache.dart';
 
 void main() {
-  // Enable Simple Cache
-  SimpleCache.enable();
+  // Enable Plain Cache
+  PlainCache.enable();
 
   runApp(MyApp());
 }
@@ -47,6 +47,6 @@ storage.remove(forKey: 'MyKey');
 
 ## License / 许可证
 
-simple_cache is released under the MIT license. See [LICENSE](./LICENSE) for details.
+plain_cache is released under the MIT license. See [LICENSE](./LICENSE) for details.
 
-simple_cache 是在 MIT 许可下发布的，有关详情请查看该许可证。
+plain_cache 是在 MIT 许可下发布的，有关详情请查看该许可证。
