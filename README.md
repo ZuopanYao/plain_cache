@@ -1,10 +1,12 @@
 # plain_cache
 
+[![Pub Package](https://img.shields.io/pub/v/plain_cache.svg)](https://pub.dartlang.org/packages/plain_cache)
+
 Persistent cache library for Dart(Flutter for iOS and Android).
 
 ## Usage
 
-### Enable Simple Cache
+### Enable plain cache
 
 ```dart
 import 'package:plain_cache/plain_cache.dart';
