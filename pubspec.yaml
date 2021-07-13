@@ -1,8 +1,8 @@
 name: plain_cache
 description: Persistent cache library for Dart(Flutter for iOS and Android).
-version: 1.0.0
-homepage: https://github.com/ZuopanYao/simple_cache
-repository: https://gitee.com/harvey520/dart_test_package.git
+version: 1.0.1
+homepage: https://github.com/ZuopanYao/plain_cache
+repository: https://github.com/ZuopanYao/plain_cache.git
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
