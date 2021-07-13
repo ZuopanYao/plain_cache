@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:simple_cache/simple_cache.dart';
+import 'package:plain_cache/plain_cache.dart';
 
 void main() {
   // Enable Simple Cache
-  SimpleCache.enable();
+  PlainCache.enable();
 
   runApp(MyApp());
 }

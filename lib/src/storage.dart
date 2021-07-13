@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:encrypt/encrypt.dart' as security;
 import 'package:path_provider/path_provider.dart';
 
-class SimpleCache {
+class PlainCache {
   static const String _dataFileName = 'SimpleCache.data';
   static Map<String, dynamic> _storage = {};
   static final security.Key _key = security.Key.fromUtf8('DCBB0AE215A52F0C');
@@ -100,4 +100,4 @@ class SimpleCache {
   }
 }
 
-final storage = SimpleCache();
+final storage = PlainCache();

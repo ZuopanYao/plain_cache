@@ -1,5 +1,5 @@
-name: simple_cache
-description: A starting point for Dart libraries or applications.
+name: plain_cache
+description: Persistent cache library for Dart(Flutter for iOS and Android).
 version: 1.0.0
 homepage: https://github.com/ZuopanYao/simple_cache
 repository: https://gitee.com/harvey520/dart_test_package.git
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   path_provider: ^2.0.2
-  encrypt:
+  encrypt: ^5.0.0
 
 dev_dependencies:
   pedantic: ^1.10.0
