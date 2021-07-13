@@ -4,7 +4,7 @@ import 'package:encrypt/encrypt.dart' as security;
 import 'package:path_provider/path_provider.dart';
 
 class PlainCache {
-  static const String _dataFileName = 'SimpleCache.data';
+  static const String _dataFileName = 'PlainCache.data';
   static Map<String, dynamic> _storage = {};
   static final security.Key _key = security.Key.fromUtf8('DCBB0AE215A52F0C');
   static final security.IV _iv = security.IV.fromUtf8('DCBB0AE215A52F0C');
